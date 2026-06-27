@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Do not index upload/download endpoints
+Disallow: /api/
+Disallow: /uploads/
+
+Sitemap: https://universalpdfconverter.com/sitemap.xml

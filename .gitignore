@@ -1,0 +1,14 @@
+node_modules/
+uploads/*.pdf
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.png
+uploads/*.doc
+uploads/*.docx
+uploads/*.ppt
+uploads/*.pptx
+.env
+*.log
+.DS_Store
+dist/
+.vscode

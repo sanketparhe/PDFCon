@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ – PDFForge</title>
+  <meta name="description" content="Frequently asked questions about PDFForge – how it works, security, file limits, and more."/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+      <div class="brand-icon"><i class="bi bi-file-earmark-pdf-fill"></i></div>
+      <span class="brand-name">PDF<span class="accent">Forge</span></span>
+    </a>
+    <div class="d-flex align-items-center gap-3 ms-auto">
+      <button class="btn-theme-toggle" id="themeToggle"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button>
+      <a href="tools.html" class="btn btn-primary-brand">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="section-eyebrow">Help Center</p>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about PDFForge.</p>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How does PDFForge work?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Upload your file using the drag & drop area or file picker. Our server converts it to PDF using industry-standard tools and returns a download link. The process usually takes under 10 seconds.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Is my data private and secure?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Yes. All uploaded files are processed on our servers and automatically deleted after 30 minutes. We never read, share, or store your file contents beyond what's needed for conversion. Files are handled over HTTPS.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What file formats are supported?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          We currently support: JPG, JPEG, PNG (image to PDF), DOC, DOCX (Word to PDF), PPT, PPTX (PowerPoint to PDF), and PDF (merge and compress). We're adding more formats regularly.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What is the maximum file size?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          The maximum file size is 50 MB per file. For merging multiple PDFs, the combined size of all files should not exceed 50 MB. If you need to convert larger files, consider compressing them first.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Do I need to create an account?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          No account is required. PDFForge is completely free to use without registration. Just upload your file and convert.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Why does Word or PowerPoint conversion require LibreOffice?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Converting Word (.docx) and PowerPoint (.pptx) files requires LibreOffice to be installed on the server. LibreOffice is a free, open-source office suite that handles these formats faithfully. If you're self-hosting, install LibreOffice on your server with <code>apt install libreoffice</code>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How do I merge multiple PDFs?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Select the "Merge PDF" tool from the tool tabs. Then upload multiple PDF files at once. They'll be merged in the order you upload them. Click "Convert to PDF" and download the combined result.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Is the service really free?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Yes, PDFForge is completely free with no hidden charges, ads, or watermarks on converted documents. We believe PDF tools should be accessible to everyone.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Can I use PDFForge on mobile?
+          <i class="bi bi-chevron-down faq-chevron"></i>
+        </button>
+        <div class="faq-answer">
+          Absolutely. PDFForge is fully responsive and works on any modern browser — desktop, tablet, or mobile. You can upload files from your camera roll or file system on iOS and Android.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer mt-5">
+  <div class="container">
+    <div class="footer-bottom d-flex justify-content-between align-items-center">
+      <p class="mb-0 small">&copy; 2026 PDFForge. All rights reserved.</p>
+      <a href="tools.html" class="btn btn-primary-brand btn-sm">Start Converting</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/theme.js"></script>
+<script>
+function toggleFAQ(btn) {
+  const item = btn.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>
