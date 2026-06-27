@@ -12,3 +12,4 @@ uploads/*.pptx
 .DS_Store
 dist/
 .vscode
+/backend/node_modules
